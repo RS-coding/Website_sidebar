@@ -14,29 +14,33 @@
 	<link rel="stylesheet" href="css/estilos.css">
 
 </head>
-<body id="top">
+<body class="m-4" id="top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#top">Raquel Costa</a>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideMenu">
+    
+        <a class="navbar-brand" href="#top">
+           <span class="d-block d-lg-none mx-4">Raquel Costa</span> 
+           <span class="d-none d-lg-block">
+               <img class="rounded-circle img-profile" src="img/avatar.jpg" alt="Raquel">
+           </span> 
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="open or close menu">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#recent-work">Recent Work</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link " href="#contact-me">Contact me</a>
-            </li>
-        </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#recent-work">Recent Work</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="#contact-me">Contact me</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    </nav>
+    </nav> 
     
     <div class="container-fluid">
         <section id="home" class="section py-5">
@@ -58,7 +62,7 @@
 
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="card my-4">
+                    <div class="card">
                         <a href="img/fulls/01.jpg">
                             <img src="img/thumbs/01.jpg" alt="work1" class="card-img-top">
                         </a>
@@ -68,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="card my-4">
+                    <div class="card">
                         <a href="img/fulls/02.jpg">
                             <img src="img/thumbs/02.jpg" alt="work2" class="card-img-top">
                         </a>
@@ -78,7 +82,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="card my-4">
+                    <div class="card">
                         <a href="img/fulls/03.jpg">
                             <img src="img/thumbs/03.jpg" alt="work3" class="card-img-top">
                         </a>
@@ -88,7 +92,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="card my-4">
+                    <div class="card">
                         <a href="img/fulls/04.jpg">
                             <img src="img/thumbs/04.jpg" alt="work4" class="card-img-top">
                         </a>
@@ -98,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="card my-4">
+                    <div class="card">
                         <a href="img/fulls/05.jpg">
                             <img src="img/thumbs/05.jpg" alt="work5" class="card-img-top">
                         </a>
@@ -108,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="card my-4">
+                    <div class="card">
                         <a href="img/fulls/06.jpg">
                             <img src="img/thumbs/06.jpg" alt="work6" class="card-img-top">
                         </a>
@@ -125,38 +129,90 @@
          <hr class="m-0">
 
          <section class="section" id="contact-me">
+            <h2 class="my-5">Send me a Message</h2>
+            <p>
+                Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. 
+                Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem 
+                neque lorem ipsum dolor.
+            </p>
 
+            <div class="row"><!--this row has two columns - one form form and other for Adress-->
+                <div class="col-12 col-md-8">
+                    <form action="">
+                        <div class="row">
+                                <div class="col-12 col-sm-6 mt-3">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Full name" aria-label="First name">
+                                </div>
+                                <div class="col-12 col-sm-6 mt-3">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" class="form-control" placeholder="Email" aria-label="Last name">
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" class="form-control" rows="5"></textarea> 
+                                    <input type="submit" class="btn btn-lg btn-outline-secondary my-4" value="Submit">
+                                </div>
+                        </div>
+                    </form><!--form-->
+                </div><!--closed first column-->
+                
+                <div class="col-12 col-md-4 pl-md-0 mt-3 mt-md-5">
+                    <address>                
+                        <p>
+                            <span>Endereço: </span>
+                            1234 Somewhere Rd. Nashville, TN 00000 United States
+                        </p>
+
+                        <p>
+                            <span>Telefone: </span>
+                            000-000-000
+                        </p>
+                        <p>
+                            <span>E-mail: </span>
+                            email@server.com
+                        </p>
+                     </address>
+                </div><!--closed second column-->
+            </div><!--row-->
          </section>
 
     </div><!--container-fluid-->
 
-    Full Portfolio
+   <footer class="footer">
+        <ul class="nav d-flex justify-content-end">
+            <li class="nav-item">
+                <a href="" class="nav-link icon-link">
+                    <i class="fab fa-twitter-square">
+                        <span class="sr-only">Twitter</span>
+                    </i>   
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link icon-link">
+                    <i class="fab fa-facebook-square">
+                        <span class="sr-only">facebook</span>
+                    </i>  
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav d-flex justify-content-end">
+            <li class="mr-2">&copy; Untitled</li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+   </footer>
 
 
-         
-  <h2>Entre em contato</h2>
 
-      <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 
+      
 
 
 
 
-      <address>                
-          <p>
-              <span>Endereço: </span>
-              1234 Somewhere Rd. Nashville, TN 00000 United States
-          </p>
 
-          <p>
-              <span>Telefone: </span>
-              000-000-000
-          </p>
-          <p>
-              <span>E-mail: </span>
-              email@server.com
-          </p>
-      </address>
+      
 		
 
       
