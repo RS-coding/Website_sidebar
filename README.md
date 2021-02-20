@@ -1,2 +1,2 @@
-# Website_sidebar
+# Website Sidebar Bootstrap
 Exercise Bootstrap - website made with Bootstrap
